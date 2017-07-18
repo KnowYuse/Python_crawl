@@ -11,5 +11,5 @@ def getHTMLText(url):
         return "产生异常"
 
 if __name__ == "__main__":
-    url = "www.nuist.edu.cn"
+    url = "http://www.nuist.edu.cn"
     print(getHTMLText(url))
