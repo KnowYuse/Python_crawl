@@ -2,7 +2,8 @@ import requests
 
 def getHTMLText(url):
     try:
-        r = requests.get(url,timeout = 30)
+        kv = {'user-agent':'Mozilla/5.0'}
+        r = requests.get(url,timeout = 30,headers = kv)
         r.raise_for_status()
         r.encoding = r.apparent_encoding
         return r.text
